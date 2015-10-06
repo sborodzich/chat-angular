@@ -1,0 +1,18 @@
+<section data-ng-controller="AuthController as authController">
+    <section class="exl-auth-form text-center exl-va-table">
+        <section class="exl-va-cell exl-blackout">
+            <section class="exl-add-user-icon">
+                <span class="glyphicon glyphicon-user"></span>
+            </section>
+            <section class="exl-logo">exlChat</section>
+            <form name="exlAuthForm">
+                <input type="text" data-ng-model="authController.userName" placeholder="Type username" />
+                <a class="exl-add-user-button"
+                   ui-sref="chat"
+                   data-ng-click="authController.auth(authController.userName)">
+                    Add user
+                </a>
+            </form>
+        </section>
+    </section>
+</section>

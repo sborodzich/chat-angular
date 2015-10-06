@@ -1,0 +1,38 @@
+{
+  "name": "chatng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SerezhaHoho/chatAng.git"
+  },
+  "keywords": [
+    "chat"
+  ],
+  "author": "Sergey Borodich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SerezhaHoho/chatAng/issues"
+  },
+  "homepage": "https://github.com/SerezhaHoho/chatAng#readme",
+  "devDependencies": {
+    "browserify": "^11.1.0",
+    "browserify-shim": "^3.8.10",
+    "gulp": "^3.9.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "angular": "global:angular"
+  }
+}

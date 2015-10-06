@@ -1,0 +1,23 @@
+{
+  "name": "chatng",
+  "version": "1.0.0",
+  "homepage": "https://github.com/SerezhaHoho/chatAng",
+  "authors": [
+    "sborodzich <serezha.hoho@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angucomplete-alt": "~1.1.1",
+    "angular": "~1.4.5",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5"
+  }
+}

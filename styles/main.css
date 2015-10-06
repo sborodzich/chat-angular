@@ -1,0 +1,287 @@
+/* Basic styles */
+@font-face {
+    font-family: cocomat;
+    src: url(../public/fonts/cocomat.light.ttf);
+}
+
+input, button, .exl-add-user-button {
+    border: none;
+    border-radius: 50px;
+    font-size: 1.7rem;
+    padding: 5px 15px;
+}
+
+body {
+    font-size: 1.7rem;
+    color: #646464;
+    background: #ECECEC;
+}
+
+input {
+    background: rgba(255, 255, 255, .8);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 1);
+}
+
+button, .exl-add-user-button {
+    color: #ffffff;
+    background: rgba(255, 168, 87, .8);
+}
+
+button:hover, button:focus, .exl-add-user-button:hover, .exl-add-user-button:focus {
+    background: rgba(255, 168, 87, 1);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.exl-va-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.exl-va-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.exl-icon {
+    font-size: 2.2rem;
+}
+
+.exl-input, .exl-autocomplete-input {
+    font-size: 1.7rem;
+    padding: 5px 20px;
+    border: 2px solid #c3c3c3;
+}
+
+/* Auth form */
+.exl-logo {
+    font-family: "cocomat", "Helvetica Neue", Arial, sans-serif;
+    color: #FFA857;
+    font-size: 6rem;
+    margin-bottom: 15px;
+}
+
+.exl-auth-form {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url("../public/images/auth.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.exl-blackout {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.exl-add-user-icon {
+    font-size: 4rem;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exl-add-user-icon .glyphicon-user {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.exl-add-user-icon .glyphicon-user:before {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Message box */
+.exl-message-box, .exl-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .9);
+    z-index: 999;
+}
+
+.exl-message-box {
+    bottom: 0;
+    padding: 5px 0;
+    -webkit-box-shadow: 0 -3px 20px 0 rgba(85, 85, 85, 0.15);
+    -moz-box-shadow: 0 -3px 20px 0 rgba(85, 85, 85, 0.15);
+    box-shadow: 0 -3px 20px 0 rgba(85, 85, 85, 0.15);
+}
+
+.exl-autocomplete-input {
+    width: 100%;
+}
+
+.exl-send-button {
+    width: 100%;
+    text-align: center;
+    background: #FFA857;
+    border: 2px solid #FFA857;
+}
+
+.exl-send-button:hover, .exl-send-button:focus {
+    background: #e1934e;
+    border: 2px solid #e1934e;
+}
+
+.exl-autocomplete-wrapper {
+    margin-top: 8px;
+}
+
+/* Header */
+.exl-header-logo {
+    font-family: "cocomat", "Helvetica Neue", Arial, sans-serif;
+    color: #FFA857;
+    font-size: 3rem;
+}
+
+.exl-header {
+    top: 0;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 3px 20px 0 rgba(85, 85, 85, 0.15);
+    -moz-box-shadow: 0 3px 20px 0 rgba(85, 85, 85, 0.15);
+    box-shadow: 0 3px 20px 0 rgba(85, 85, 85, 0.15);
+}
+
+.exl-header-icon {
+    border-radius: 50%;
+    font-size: 1.7rem;
+    padding: 14px 15px;
+}
+
+#filters, #serverValues {
+    margin-top: 10px;
+}
+
+/* History */
+.exl-history {
+    height: 100vh;
+    overflow: auto;
+    padding: 80px 0;
+}
+
+.exl-user-name, .exl-date {
+    font-size: 1.5rem;
+}
+
+.exl-user-name {
+    font-weight: bold;
+}
+
+.exl-date {
+    color: #a3a3a3;
+}
+
+.exl-dropdown-button {
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+}
+
+.exl-message-body {
+    border-radius: 50px;
+    background: #ffffff;
+    padding: 10px 40px;
+}
+
+.exl-message {
+    margin-bottom: 15px;
+}
+
+.exl-triangle {
+    width: 0;
+    position: absolute;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 50px 0;
+    border-color: transparent #ffffff transparent transparent;
+    left: -15px;
+    top: 0;
+}
+
+.exl-dropdown-item {
+    font-size: 1.5rem;
+    background: #ffffff;
+    color: #555555;
+    width: 100%;
+    text-align: left;
+}
+
+.exl-dropdown-item:hover {
+    border-radius: 0;
+    color: #ffffff;
+}
+
+/* Text highlight */
+.exl-highlighted {
+    background: #FFA857;
+}
+
+/* Angucomplete */
+.angucomplete-holder {
+    position: relative;
+}
+
+.angucomplete-dropdown {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 38px;
+    font-size: 1.7rem;
+    border: 2px solid #c3c3c3;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.angucomplete-row, .angucomplete-searching {
+    padding: 5px 20px;
+}
+
+.angucomplete-row:first-child {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.angucomplete-row:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.angucomplete-row:hover {
+    background-color: #c3c3c3;
+    color: #ffffff;
+    width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+    .exl-input {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .exl-send-button {
+        padding: 5px 5px;
+    }
+
+    body, .exl-header, .exl-message-box {
+        padding: 10px 15px;
+    }
+
+    .exl-auth-form {
+        background-position: center right;
+    }
+}

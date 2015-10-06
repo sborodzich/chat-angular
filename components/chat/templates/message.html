@@ -1,0 +1,15 @@
+<section>
+    <section class="col-md-offset-1 col-md-1 col-xs-2">
+        <span class="glyphicon glyphicon-user exl-icon"></span>
+    </section>
+    <section class="col-xs-8 exl-message-body">
+        <span class="exl-triangle"></span>
+        <span class="exl-user-name">{{message.user}}</span>
+        <span class="exl-date">{{message.date}}</span>
+        <section data-ng-bind-html="message.text | highlighter:searchQuery.text">
+        </section>
+    </section>
+    <section class="col-md-1 col-xs-2">
+        <possible-actions-menu message="message"></possible-actions-menu>
+    </section>
+</section>

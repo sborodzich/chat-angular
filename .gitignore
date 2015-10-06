@@ -4,4 +4,4 @@ node_modules/
 vendor/
 tmp
 .DS_Store
-.idea.idea
+.idea
